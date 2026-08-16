@@ -5,3 +5,17 @@ WARNING: This is a development server. Do not use it in a production deployment.
 Press CTRL+C to quit
 127.0.0.1 - - [16/Aug/2026 13:11:15] "GET /api/models HTTP/1.1" 200 -
 127.0.0.1 - - [16/Aug/2026 13:11:15] "GET /api/models HTTP/1.1" 200 -
+127.0.0.1 - - [16/Aug/2026 13:11:17] "POST /api/scan HTTP/1.1" 200 -
+127.0.0.1 - - [16/Aug/2026 13:11:30] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [16/Aug/2026 13:11:30] "GET /static/styles.css HTTP/1.1" 304 -
+127.0.0.1 - - [16/Aug/2026 13:11:30] "GET /static/main.js HTTP/1.1" 200 -
+127.0.0.1 - - [16/Aug/2026 13:11:30] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [16/Aug/2026 13:11:52] "POST /api/scan HTTP/1.1" 200 -
+127.0.0.1 - - [16/Aug/2026 13:12:09] "POST /api/scan HTTP/1.1" 200 -
+127.0.0.1 - - [16/Aug/2026 13:12:15] "POST /api/scan HTTP/1.1" 200 -
+127.0.0.1 - - [16/Aug/2026 13:12:30] "POST /api/scan HTTP/1.1" 200 -
+127.0.0.1 - - [16/Aug/2026 13:12:36] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [16/Aug/2026 13:12:36] "GET /static/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [16/Aug/2026 13:12:36] "GET /static/styles.css HTTP/1.1" 304 -
+127.0.0.1 - - [16/Aug/2026 13:12:53] "POST /api/scan HTTP/1.1" 200 -
+127.0.0.1 - - [16/Aug/2026 13:13:39] "POST /api/scan HTTP/1.1" 200 -
