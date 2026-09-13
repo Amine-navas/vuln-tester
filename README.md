@@ -8,9 +8,6 @@
 
 Detect • Analyze • Classify • Monitor
 
-<img src="img/Capture d&apos;écran 2026-09-12 143710.png " alt="Malware Detector Screenshot" width="80%"/>
-<img src="img/Capture d&apos;écran 2026-09-12 143823.png" alt="Malware Detector Screenshot" width="80%"/>
-
 </div>
 
 ---
@@ -48,7 +45,7 @@ Below are real outputs from the web interface (`évaluez le risque`), showing th
 
 **🔴 Malicious sample detected**
 
-<img src="assets/screenshot-malicious.png" alt="Malicious file analysis result" width="100%"/>
+<img src="img/Capture d&apos;écran 2026-09-12 143823.png" alt="Malware Detector Screenshot" width="80%"/>
 
 `script_mal.pdf` → **Verdict: Malveillant** · Score **100%** · Niveau **Élevé**
 5 indicateurs suspects, structure binaire anormale
@@ -58,7 +55,7 @@ Below are real outputs from the web interface (`évaluez le risque`), showing th
 
 **🟢 Benign sample confirmed**
 
-<img src="assets/screenshot-benign.png" alt="Benign file analysis result" width="100%"/>
+<img src="img/Capture d&apos;écran 2026-09-12 143710.png " alt="Malware Detector Screenshot" width="80%"/>
 
 `correction_TD2-EXO2.sql` → **Verdict: Bénin** · Score **4%** · Niveau **Faible**
 Aucun signal critique détecté
