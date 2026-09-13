@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0b1220">
+  <title>SentinelScan | Analyse de malware</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="SentinelScan, accueil">
+        <span class="brand-mark" aria-hidden="true">S</span>
+        <span>Sentinel<span class="brand-accent">Scan</span></span>
+      </a>
+      <div class="system-status"><span class="status-dot"></span> Moteur opérationnel</div>
+    </header>
+
+    <main class="dashboard">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">ANALYSE DE SÉCURITÉ</p>
+          <h1>Analysez un échantillon,<br><span>évaluez le risque.</span></h1>
+          <p class="hero-copy">Collez un contenu texte pour obtenir une estimation instantanée du niveau de risque.</p>
+        </div>
+        <div class="hero-stat" aria-label="Analyse instantanée">
+          <span class="stat-value">&lt; 1 s</span>
+          <span class="stat-label">Temps d’analyse</span>
+        </div>
+      </section>
+
+      <div class="workspace">
+        <section class="panel scan-panel" aria-labelledby="scan-title">
+          <div class="panel-heading">
+            <div class="panel-icon scan-icon" aria-hidden="true">⌁</div>
+            <div>
+              <h2 id="scan-title">Nouvelle analyse</h2>
+              <p>Ajoutez l’échantillon à inspecter.</p>
+            </div>
+          </div>
+
+          <label class="input-label" for="sample">Échantillon texte</label>
+          <div class="textarea-wrap">
+            <textarea id="sample" placeholder="Collez ici le contenu à analyser…" rows="11" spellcheck="false" aria-describedby="sample-help"></textarea>
+            <span id="charCount" class="char-count">0 caractères</span>
+          </div>
+
+          <div class="upload-block">
+            <label class="input-label" for="fileInput">Ou sélectionner un fichier</label>
+            <input id="fileInput" type="file" accept="*/*" />
+            <small id="fileNameLabel" class="help-text">Aucun fichier sélectionné.</small>
+          </div>
+          <p id="sample-help" class="help-text">Les données sont analysées localement par le moteur de détection. Vous pouvez fournir du texte ou un fichier.</p>
+
+          <div class="actions">
+            <button id="scanBtn" class="primary-button" type="button">
+              <span class="button-icon" aria-hidden="true">⌕</span>
+              <span class="button-text">Lancer l’analyse</span>
+            </button>
+            <button id="clearBtn" class="secondary-button" type="button">Effacer</button>
+          </div>
+        </section>
+
+        <section class="panel results-panel" aria-labelledby="results-title" aria-live="polite">
+          <div class="panel-heading">
+            <div class="panel-icon result-icon" aria-hidden="true">✓</div>
+            <div>
+              <h2 id="results-title">Résultat d’analyse</h2>
+              <p id="resultSubtitle">En attente d’un échantillon.</p>
+            </div>
+          </div>
+
+          <div id="emptyState" class="empty-state">
+            <div class="empty-illustration" aria-hidden="true">⌁</div>
+            <h3>Prêt pour l’analyse</h3>
+            <p>Le verdict et les indicateurs de votre échantillon apparaîtront ici.</p>
+          </div>
+
+          <div id="resultContent" class="result-content" hidden>
+            <div class="verdict-card" id="verdictCard">
+              <span class="verdict-label">VERDICT</span>
+              <strong id="verdict">—</strong>
+              <span id="verdictDescription">—</span>
+            </div>
+
+            <div class="metric-grid">
+              <div class="metric-card">
+                <span>Score de risque</span>
+                <strong id="score">—</strong>
+              </div>
+              <div class="metric-card">
+                <span>Niveau</span>
+                <strong id="risk">—</strong>
+              </div>
+            </div>
+
+            <div class="feature-section">
+              <h3>Indicateurs extraits</h3>
+              <dl class="feature-list">
+                <div><dt>Longueur</dt><dd id="featureLength">—</dd></div>
+                <div><dt>Chiffres détectés</dt><dd id="featureDigits">—</dd></div>
+                <div><dt>Lignes</dt><dd id="featureLines">—</dd></div>
+              </dl>
+            </div>
+
+            <div class="detail-section">
+              <h3>Analyse détaillée</h3>
+              <ul id="riskDetailsList" class="detail-list"></ul>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <p id="feedback" class="feedback" role="alert"></p>
+    </main>
+  </div>
+  <script src="/static/main.js"></script>
+</body>
+</html>
