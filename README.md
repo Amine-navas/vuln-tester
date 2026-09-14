@@ -839,13 +839,20 @@ No explicit license is currently included in the repository. Before distributing
 
 The architecture is functional but remains extensible. ML performance, feature engineering, API security, automated testing and production deployment can all be further improved.
 
+## 👨‍💻 Author
+
+Amine Aymen Senbati
+
+Étudiant en Cybersécurité.
+
+### Interests
+
+- Cybersecurity
+- Machine Learning
+- Systems Programming
+- Software Engineering
+
 ---
-
-## ⭐ Support the Project
-
-If this project is useful for your cybersecurity or Machine Learning research:
-
-⭐ Star the repository · 🐛 Report bugs through Issues · 💡 Suggest improvements · 🔀 Submit Pull Requests · 📚 Improve the documentation
 
 <div align="center">
 
