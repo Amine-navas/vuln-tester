@@ -640,10 +640,3 @@ No explicit license is currently included in the repository. Before distributing
 **Amine Aymen Senbati**
 
 Étudiant en Cybersécurité.
-
-**Interests**
-
-- Cybersecurity
-- Machine Learning
-- Systems Programming
-- Software Engineering
