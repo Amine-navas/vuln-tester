@@ -51,7 +51,7 @@ Real outputs from the web interface (`évaluez le risque`), showing the detectio
 
 ## 🔴 Malicious Sample Detected
 
-![Malicious detection](img/Capture%20d'écran%202026-09-12%20143823.png)
+![Malicious detection](img/je_pense_pas.png)
 
 `script_mal.pdf` → **Verdict: Malveillant** · Score **100%** · Niveau **Élevé**
 5 indicateurs suspects, structure binaire anormale
@@ -60,7 +60,7 @@ Real outputs from the web interface (`évaluez le risque`), showing the detectio
 
 ## 🟢 Benign Sample Confirmed
 
-![Benign detection](img/Capture%20d'écran%202026-09-12%20143710.png)
+![Benign detection](img/img_je_pense.png)
 
 `correction_TD2-EXO2.sql` → **Verdict: Bénin** · Score **4%** · Niveau **Faible**
 Aucun signal critique détecté
